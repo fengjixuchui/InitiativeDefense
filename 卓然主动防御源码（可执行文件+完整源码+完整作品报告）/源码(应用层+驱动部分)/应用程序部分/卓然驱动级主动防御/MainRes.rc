@@ -1,0 +1,408 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "驱动级云安全 1.0 版",IDC_STATIC,51,7,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) lovesuae/zhuoer 2009",IDC_STATIC,32,27,143,8
+    DEFPUSHBUTTON   "确定",IDOK,178,32,50,16,WS_GROUP
+END
+
+IDD_MAIN DIALOGEX 0, 0, 320, 250
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "卓然云安全主动防御"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_PROPPAGE_2 DIALOGEX 0, 0, 400, 250
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "   进程监控      "
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "控制",IDC_STATIC,4,5,391,54
+    LISTBOX         IDC_LIST1,8,181,383,67,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "开启",IDC_BUTTON1,9,24,54,22
+    PUSHBUTTON      "停止",IDC_BUTTON2,74,24,54,22
+    PUSHBUTTON      "添加",IDC_BUTTON3,139,24,54,22
+    PUSHBUTTON      "清空",IDC_BUTTON4,204,24,54,22
+    GROUPBOX        "拦截信息",IDC_STATIC,5,167,392,82
+    PUSHBUTTON      "添加规则",IDC_BUTTON5,269,24,54,22
+    GROUPBOX        "规则",IDC_STATIC,5,67,390,94
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,8,77,385,81,WS_EX_TRANSPARENT
+    PUSHBUTTON      "删除规则",IDC_BUTTON6,335,24,54,22
+    PUSHBUTTON      "Button8",IDC_BUTTON8,323,53,50,14,NOT WS_VISIBLE
+END
+
+IDD_PROPPAGE_1 DIALOGEX 0, 0, 400, 250
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "  主要   "
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "启动进程服务",IDC_BUTTON1,227,42,61,24
+    PUSHBUTTON      "暂停进程服务",IDC_BUTTON2,313,42,61,24
+    GROUPBOX        "启动与暂停",IDC_STATIC,216,26,171,170,0,WS_EX_TRANSPARENT
+    GROUPBOX        "安装与卸载",IDC_STATIC,6,26,171,61
+    PUSHBUTTON      "安装服务",IDC_BUTTON3,16,48,61,24
+    PUSHBUTTON      "卸载服务",IDC_BUTTON4,103,48,61,24
+    PUSHBUTTON      "启动注册表服务",IDC_BUTTON6,227,81,61,24
+    PUSHBUTTON      "暂停注册表服务",IDC_BUTTON8,313,81,61,24
+    PUSHBUTTON      "启动内存监控",IDC_BUTTON9,227,120,61,24
+    PUSHBUTTON      "暂停内存监控",IDC_BUTTON10,313,120,61,24
+    PUSHBUTTON      "启动文件监控",IDC_BUTTON11,227,159,61,24
+    PUSHBUTTON      "暂停文件监控",IDC_BUTTON12,313,159,61,24
+    LISTBOX         IDC_LIST1,6,94,171,54,LBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Button5",IDC_BUTTON7,348,0,50,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT1,193,1,186,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE,WS_EX_TRANSPARENT
+END
+
+IDD_PROPPAGE_3 DIALOGEX 0, 0, 400, 250
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "   注册表监控      "
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "开启功能",IDC_BUTTON1,13,19,54,22
+    PUSHBUTTON      "停止功能",IDC_BUTTON2,13,50,54,22
+    LISTBOX         IDC_LIST1,94,20,304,82,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "清空",IDC_BUTTON3,13,81,54,22
+    GROUPBOX        "控制",IDC_STATIC,5,7,75,101
+    GROUPBOX        "详细信息",IDC_STATIC,89,8,310,102
+    GROUPBOX        "规则",IDC_STATIC,6,118,393,131
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,131,382,92
+    PUSHBUTTON      "添加规则",IDC_BUTTON5,256,226,54,22
+    PUSHBUTTON      "删除规则",IDC_BUTTON6,335,226,54,22
+END
+
+IDD_PROPPAGE_4 DIALOGEX 0, 0, 400, 250
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "    内存映射      "
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "开启功能",IDC_BUTTON1,334,36,55,21
+    PUSHBUTTON      "停止功能",IDC_BUTTON2,334,74,55,21
+    LISTBOX         IDC_LIST1,7,21,316,224,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "清空列表",IDC_BUTTON3,334,112,55,21
+    GROUPBOX        "控制",IDC_STATIC,332,18,62,128
+    GROUPBOX        "加载信息",IDC_STATIC,1,5,328,244
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+CAPTION "注意,有进程正在创建!"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "我认识它,永久放行",IDOK,65,160,95,14
+    PUSHBUTTON      "这个很危险,永久禁止!",IDCANCEL,171,160,95,14
+    EDITTEXT        IDC_EDIT1,57,16,245,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,57,34,245,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "父进程PID",IDC_STATIC,14,19,43,8
+    LTEXT           "父进程路径",IDC_STATIC,14,37,43,8
+    LTEXT           "新进程PID",IDC_STATIC,14,55,43,8
+    LTEXT           "新进程路径",IDC_STATIC,14,73,43,8
+    EDITTEXT        IDC_EDIT3,57,52,245,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,57,70,245,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "放行一次",IDOK2,65,145,95,14
+    PUSHBUTTON      "禁止一次",IDCANCEL2,171,145,95,14
+    GROUPBOX        "进程信息",IDC_STATIC,7,4,302,84
+    EDITTEXT        IDC_EDIT5,56,99,246,34,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "行为描述",IDC_STATIC,7,89,302,49
+    GROUPBOX        "控制",IDC_STATIC,7,138,302,41
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 315, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+CAPTION "注意,有进程正在修改注册表!"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "相同一直放行",IDOK,66,168,95,14
+    PUSHBUTTON      "相同一直禁止",IDCANCEL,171,168,95,14
+    EDITTEXT        IDC_EDIT1,53,16,258,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,53,35,258,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "进程名称",IDC_STATIC,11,17,38,8
+    LTEXT           "进程路径",IDC_STATIC,11,37,33,8
+    LTEXT           "注册表键值",IDC_STATIC,11,77,49,8
+    LTEXT           "注册表路径",IDC_STATIC,11,57,49,8
+    EDITTEXT        IDC_EDIT3,53,73,258,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,53,54,258,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "放行一次",IDOK2,65,153,95,14
+    PUSHBUTTON      "禁止一次",IDCANCEL2,171,153,95,14
+    GROUPBOX        "进程信息",IDC_STATIC,4,6,311,85
+    EDITTEXT        IDC_EDIT5,54,104,257,34,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "行为描述",IDC_STATIC,3,95,312,48
+    GROUPBOX        "控制",IDC_STATIC,3,145,312,44
+END
+
+IDD_PROPPAGE_5 DIALOGEX 0, 0, 400, 250
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "    文件监控      "
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "开启功能",IDC_BUTTON1,22,23,59,26
+    PUSHBUTTON      "停止功能",IDC_BUTTON2,104,23,59,26
+    LISTBOX         IDC_LIST1,10,83,383,160,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "清空列表",IDC_BUTTON3,186,23,59,26
+    GROUPBOX        "控制",IDC_STATIC,6,7,392,52
+    GROUPBOX        "详细信息",IDC_STATIC,4,68,395,181
+END
+
+IDD_PROPPAGE_0 DIALOGEX 0, 0, 400, 251
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "主页   "
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 293, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加进程监控规则"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,179,122,50,14
+    PUSHBUTTON      "取消",IDCANCEL,236,122,50,14
+    EDITTEXT        IDC_EDIT1,88,28,187,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,88,70,187,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,88,49,187,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,88,91,187,14,ES_AUTOHSCROLL
+    LTEXT           "允许(是填1,否填0)",IDC_STATIC,17,31,70,8
+    LTEXT           "进程完整路径(必需)",IDC_STATIC,17,73,70,8
+    LTEXT           "父进程名",IDC_STATIC,17,52,70,8
+    LTEXT           "父进程路径",IDC_STATIC,17,94,70,8
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 316, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AddRegRull"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,116,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,116,50,14
+    EDITTEXT        IDC_EDIT1,98,28,187,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,98,68,187,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,98,48,187,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,98,88,187,14,ES_AUTOHSCROLL
+    LTEXT           "允许(是填1,否填0)",IDC_STATIC,23,30,70,8
+    LTEXT           "进程完整路径",IDC_STATIC,23,72,70,8
+    LTEXT           "进程名",IDC_STATIC,23,51,70,8
+    LTEXT           "注册表路径",IDC_STATIC,23,93,70,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,1
+ PRODUCTVERSION 1,0,2,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "驱动/云安全/主动防御"
+            VALUE "CompanyName", "lovesuae@gmail.com"
+            VALUE "FileDescription", "lovesuae/zhuoer"
+            VALUE "FileVersion", "1.0.2.1"
+            VALUE "InternalName", "卓然主动防御"
+            VALUE "LegalCopyright", "lovesuae@gmail.com"
+            VALUE "OriginalFilename", "卓然主动防御"
+            VALUE "ProductName", "卓然主动防御"
+            VALUE "ProductVersion", "1.0.2.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_PROPPAGE_1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 398
+        HORZGUIDE, 48
+        HORZGUIDE, 78
+        HORZGUIDE, 110
+        HORZGUIDE, 137
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 4
+    END
+
+    IDD_PROPPAGE_0, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ico22.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 卓然驱动级云安全主动防御"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
